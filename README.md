@@ -16,26 +16,54 @@ _This two player game version of the popular kids' game, Rock Paper Scissors._
 ## Specifications
 
 * _Returns false if object and argument are the same_
-* Example input: rock(rock)
+* Example input: rock.ties?(rock)
+* Example output: true
+* Example input: rock.wins?(rock)
+* Example output: false
+* Example input: rock.loses?(rock)
 * Example output: false
 * _Returns true if rock is the object and scissors is the argument_
-* Example input: rock(scissors)
+* Example input: rock.ties?(scissors)
+* Example output: false
+* Example input: rock.wins?(scissors)
 * Example output: true
+* Example input: rock.loses?(scissors)
+* Example output: false
 * _Returns true if scissors is the object and paper is the argument_
-* Example input: scissors(paper)
+* Example input: scissors.ties?(paper)
+* Example output: false
+* Example input: scissors.wins?(paper)
 * Example output: true
+* Example input: scissors.loses(paper)
+* Example output: false
 * _Returns true if paper is the object and rock is the argument_
-* Example input: paper(rock)
+* Example input: paper.ties?(rock)
+* Example output: false
+* Example input: paper.wins?(rock)
 * Example output: true
+* Example input: paper.loses?(rock)
+* Example output: false
 * _Returns false if scissors is the object and rock is the argument_
-* Example input: scissors(rock)
+* Example input: scissors.ties?(rock)
 * Example output: false
+* Example input: scissors.wins?(rock)
+* Example output: false
+* Example input: scissors.loses?(rock)
+* Example output: true
 * _Returns false if paper is the object and scissors is the argument_
-* Example input: paper(scissors)
+* Example input: paper.ties?(scissors)
 * Example output: false
+* Example input: paper.wins?(scissors)
+* Example output: false
+* Example input: paper.loses?(scissors)
+* Example output: true
 * _Returns false if rock is the object and paper is the argument_
-* Example input: rock(paper)
+* Example input: rock.ties?(paper)
 * Example output: false
+* Example input: rock.wins?(paper)
+* Example output: false
+* Example input: rock.loses?(paper)
+* Example output: true
 
 ## Known Bugs
 
