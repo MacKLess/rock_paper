@@ -1,12 +1,15 @@
 class String
-  def beats?(opponent)
-    if ((self == 'rock') & (opponent == 'scissors')) | ((self == 'scissors') & (opponent == 'paper')) | ((self == 'paper') & (opponent == 'rock'))
-      return true
+  def game(opponent)
+    if self == opponent
+      return "ties"
+    elsif ((self == 'rock') & (opponent == 'scissors')) | ((self == 'scissors') & (opponent == 'paper')) | ((self == 'paper') & (opponent == 'rock'))
+      return "wins"
     end
-    false
+    "loses"
   end
 end
-puts "paper".beats?('rock')
-puts "paper".beats?('scissors')
-puts "scissors".beats?('paper')
-puts "scissors".beats?('scissors')
+
+puts "paper".game('rock')
+puts "paper".game('scissors')
+puts "scissors".game('paper')
+puts "scissors".game('scissors')
